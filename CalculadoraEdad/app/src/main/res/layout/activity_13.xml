@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity13">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="305dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:text="¿Cuántas veces por semana caminas o realizas ejercicio por 30 minutos o más?"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="btnSiguienteOnClick"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbOpcion4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+        android:id="@+id/rbOpcion1"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Nunca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <RadioButton
+        android:id="@+id/rbOpcion2"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:text="De 1 a 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbOpcion1" />
+
+    <RadioButton
+        android:id="@+id/rbOpcion3"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:text="De 3 a 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbOpcion2" />
+
+    <RadioButton
+        android:id="@+id/rbOpcion4"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:text="Cinco o más"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbOpcion3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
